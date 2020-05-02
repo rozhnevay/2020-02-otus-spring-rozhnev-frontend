@@ -1,4 +1,4 @@
-# 2020-02-otus-spring-rozhnev-frontend
+# spring-education-frontend
 
 > A Vue.js project
 
