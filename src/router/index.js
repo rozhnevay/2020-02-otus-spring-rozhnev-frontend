@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import BookList from "@/components/BookList";
+import NotFound from "@/components/NotFound";
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+      path: "/books",
+      name: 'books',
+      component: BookList
+    },
+    { path: '/', redirect: '/books' },
+    { path: '/404', component: NotFound },
+    { path: '*', redirect: '/404' },
+
   ]
 })
